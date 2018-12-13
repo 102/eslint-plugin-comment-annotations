@@ -29,6 +29,9 @@
     "eslint",
     "plugin",
     "comment",
-    "annotation"
+    "annotation",
+    "hack",
+    "todo",
+    "fixme"
   ]
 }

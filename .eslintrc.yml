@@ -1,0 +1,11 @@
+env:
+    node: true
+plugins:
+    - prettier
+extends:
+    - prettier
+parserOptions:
+    ecmaVersion: 8
+    sourceType: module
+rules:
+    prettier/prettier: error

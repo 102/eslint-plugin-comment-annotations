@@ -19,7 +19,8 @@
   "files": [
     "index.js",
     "lib",
-    "LICENSE"
+    "LICENSE",
+    "README.md"
   ],
   "repository": {
     "url": "https://github.com/102/eslint-plugin-comment-annotations.git",

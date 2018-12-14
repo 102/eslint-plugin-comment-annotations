@@ -29,6 +29,7 @@
   "keywords": [
     "eslint",
     "plugin",
+    "eslintplugin",
     "comment",
     "annotation",
     "hack",

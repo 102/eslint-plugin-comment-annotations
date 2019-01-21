@@ -1,5 +1,7 @@
 # eslint-plugin-comment-annotations
 
+![npm version](https://img.shields.io/npm/v/eslint-plugin-comment-annotations.svg?style=flat)
+
 ESLint rules for JavaScript comment annotations.
 
 # Rules

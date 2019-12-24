@@ -1,7 +1,6 @@
-"use strict";
-
-const RuleTester = require("eslint").RuleTester;
+const { RuleTester } = require("eslint");
 const rule = require("../../../lib/rules/single-colon");
+
 const tester = new RuleTester();
 
 const expectedErrorMessage = "Expected to find a single colon after annotation";

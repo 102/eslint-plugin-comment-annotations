@@ -1,11 +1,13 @@
 env:
-    node: true
+  node: true
 plugins:
-    - prettier
+  - prettier
 extends:
-    - prettier
+  - airbnb-base
+  - prettier
 parserOptions:
-    ecmaVersion: 8
-    sourceType: module
+  ecmaVersion: 8
+  sourceType: module
 rules:
-    prettier/prettier: error
+  prettier/prettier: error
+  global-require: off

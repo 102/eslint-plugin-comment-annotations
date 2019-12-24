@@ -1,7 +1,6 @@
-"use strict";
-
-const RuleTester = require("eslint").RuleTester;
+const { RuleTester } = require("eslint");
 const rule = require("../../../lib/rules/all-caps");
+
 const tester = new RuleTester();
 
 const expectedErrorMessage = "Unexpected lowercase in comment annotation";

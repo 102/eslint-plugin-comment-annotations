@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint && mocha tests/lib/rules/*",
+    "test": "mocha tests/lib/rules/*",
     "lint": "eslint ./"
   },
   "author": "Roman Gusev <rgusev2@gmail.com>",

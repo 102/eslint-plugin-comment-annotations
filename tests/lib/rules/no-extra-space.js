@@ -41,8 +41,13 @@ tester.run("no-extra-space", rule, {
       errors: [expectedErrorMessage]
     },
     {
-      code: "//fix me",
+      code: "//fix  me",
       output: "//fixme",
+      errors: [expectedErrorMessage]
+    },
+    {
+      code: "//to\t  do",
+      output: "//todo",
       errors: [expectedErrorMessage]
     }
   ]

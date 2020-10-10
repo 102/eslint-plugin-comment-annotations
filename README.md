@@ -34,3 +34,17 @@ ESLint rules for JavaScript comment annotations.
   // fixme:
   //  fixme:
   ```
+
+- `no-extra-space` disables extra space in comment annotations (TODO and FIXME)
+
+  ```js
+  // These comments will fail
+  // to do
+  // fix  me
+  //  fix       me
+
+  // These comments will not fail
+  // todo
+  // fixme
+  //  fixme
+  ```

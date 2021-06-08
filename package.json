@@ -15,7 +15,7 @@
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-prettier": "^3.0.0",
-    "mocha": "^8.0.1",
+    "mocha": "^9.0.0",
     "prettier": "^1.15.3"
   },
   "files": [

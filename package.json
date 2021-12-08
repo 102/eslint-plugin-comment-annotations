@@ -10,7 +10,7 @@
   "author": "Roman Gusev <rgusev2@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.2.0",
+    "eslint": "^8.4.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.19.1",

@@ -2,9 +2,11 @@ env:
   node: true
 plugins:
   - prettier
+  - eslint-plugin
 extends:
   - airbnb-base
   - prettier
+  - plugin:eslint-plugin/recommended
 parserOptions:
   ecmaVersion: 8
   sourceType: module

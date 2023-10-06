@@ -19,7 +19,6 @@ tester.run("no-extra-space", rule, {
     "/* just HaCk in a normal comment */",
     "/* just xXx in a normal comment */",
     "/* just fix me in a normal comment */",
-    "/* just todo in a normal comment */",
     "// review",
     "/* FIXME */",
     "// just a regular comment"

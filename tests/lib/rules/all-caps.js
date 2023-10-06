@@ -19,7 +19,6 @@ tester.run("all-caps", rule, {
     "/* just HaCk in a normal comment */",
     "/* just xXx in a normal comment */",
     "/* just fix me in a normal comment */",
-    "/* just todo in a normal comment */",
     "// fix me",
     "// review",
     "/* FIXME */",
@@ -34,16 +33,6 @@ tester.run("all-caps", rule, {
     {
       code: "//  TODo: fix this",
       output: "//  TODO: fix this",
-      errors: [expectedErrorMessage]
-    },
-    {
-      code: "//  fixme  ",
-      output: "//  FIXME  ",
-      errors: [expectedErrorMessage]
-    },
-    {
-      code: "//  fixme  ",
-      output: "//  FIXME  ",
       errors: [expectedErrorMessage]
     },
     {

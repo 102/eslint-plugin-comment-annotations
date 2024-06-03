@@ -17,69 +17,69 @@ tester.run("single-colon", rule, {
      */`,
     `/* haCK: zxc
      */`,
-    "  // TODO:"
+    "  // TODO:",
   ],
   invalid: [
     {
       code: "  // TODO",
       output: "  // TODO:",
-      errors: [`${expectedErrorMessage}: no colons`]
+      errors: [`${expectedErrorMessage}: no colons`],
     },
     {
       code: "  // TODO::",
       output: "  // TODO:",
-      errors: [`${expectedErrorMessage}: multiple colons`]
+      errors: [`${expectedErrorMessage}: multiple colons`],
     },
     {
       code: "// TODO asd",
       output: "// TODO: asd",
-      errors: [`${expectedErrorMessage}: no colons`]
+      errors: [`${expectedErrorMessage}: no colons`],
     },
     {
       code: "// TODO",
       output: "// TODO:",
-      errors: [`${expectedErrorMessage}: no colons`]
+      errors: [`${expectedErrorMessage}: no colons`],
     },
     {
       code: "// TODO:: asd",
       output: "// TODO: asd",
-      errors: [`${expectedErrorMessage}: multiple colons`]
+      errors: [`${expectedErrorMessage}: multiple colons`],
     },
     {
       code: "// TODO::: asd",
       output: "// TODO: asd",
-      errors: [`${expectedErrorMessage}: multiple colons`]
+      errors: [`${expectedErrorMessage}: multiple colons`],
     },
     {
       code: "// fixmE::: asd",
       output: "// fixmE: asd",
-      errors: [`${expectedErrorMessage}: multiple colons`]
+      errors: [`${expectedErrorMessage}: multiple colons`],
     },
     {
       code: "// XXx::: asd",
       output: "// XXx: asd",
-      errors: [`${expectedErrorMessage}: multiple colons`]
+      errors: [`${expectedErrorMessage}: multiple colons`],
     },
     {
       code: `/* fixMe:: zxc
              qwe */`,
       output: `/* fixMe: zxc
              qwe */`,
-      errors: [`${expectedErrorMessage}: multiple colons`]
+      errors: [`${expectedErrorMessage}: multiple colons`],
     },
     {
       code: `/*   fixMe:: zxc
              qwe */`,
       output: `/*   fixMe: zxc
              qwe */`,
-      errors: [`${expectedErrorMessage}: multiple colons`]
+      errors: [`${expectedErrorMessage}: multiple colons`],
     },
     {
       code: `/*   fixMe zxc
              qwe */`,
       output: `/*   fixMe: zxc
              qwe */`,
-      errors: [`${expectedErrorMessage}: no colons`]
-    }
-  ]
+      errors: [`${expectedErrorMessage}: no colons`],
+    },
+  ],
 });

@@ -21,33 +21,33 @@ tester.run("no-extra-space", rule, {
     "/* just fix me in a normal comment */",
     "// review",
     "/* FIXME */",
-    "// just a regular comment"
+    "// just a regular comment",
   ],
   invalid: [
     {
       code: "/* Fix Me: */",
       output: "/* FixMe: */",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//  TO Do: fix this",
       output: "//  TODo: fix this",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//  fix me  ",
       output: "//  fixme  ",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//fix  me",
       output: "//fixme",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//to\t  do",
       output: "//todo",
-      errors: [expectedErrorMessage]
-    }
-  ]
+      errors: [expectedErrorMessage],
+    },
+  ],
 });

@@ -22,33 +22,33 @@ tester.run("all-caps", rule, {
     "// fix me",
     "// review",
     "/* FIXME */",
-    "// just a regular comment"
+    "// just a regular comment",
   ],
   invalid: [
     {
       code: "/* FixMe: */",
       output: "/* FIXME: */",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//  TODo: fix this",
       output: "//  TODO: fix this",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//  fixme  ",
       output: "//  FIXME  ",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//  xxX  ",
       output: "//  XXX  ",
-      errors: [expectedErrorMessage]
+      errors: [expectedErrorMessage],
     },
     {
       code: "//fixme",
       output: "//FIXME",
-      errors: [expectedErrorMessage]
-    }
-  ]
+      errors: [expectedErrorMessage],
+    },
+  ],
 });

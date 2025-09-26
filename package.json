@@ -17,7 +17,7 @@
     "url": "https://github.com/102/eslint-plugin-comment-annotations.git"
   },
   "license": "MIT",
-  "author": "Roman Gusev <rgusev2@gmail.com>",
+  "author": "Roman Kenig-Gusev <rgusev2@gmail.com>",
   "main": "index.js",
   "files": [
     "index.js",

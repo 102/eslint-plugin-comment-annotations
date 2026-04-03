@@ -31,7 +31,7 @@
     "test": "mocha tests/lib/rules/*"
   },
   "devDependencies": {
-    "eslint": "^9.4.0",
+    "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-eslint-plugin": "^7.0.0",
     "eslint-plugin-prettier": "^5.1.3",
